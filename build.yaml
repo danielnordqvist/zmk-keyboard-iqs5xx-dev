@@ -1,3 +1,4 @@
 include:
 - board: seeeduino_xiao_ble
   shield: iqs5xx_dev
+  snippet: zmk-usb-logging
