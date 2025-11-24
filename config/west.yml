@@ -2,20 +2,13 @@ manifest:
   remotes:
   - name: zmkfirmware
     url-base: https://github.com/zmkfirmware
-  - name: urob
-    url-base: https://github.com/urob
   - name: danielnordqvist
     url-base: https://github.com/danielnordqvist
   projects:
   - name: zmk
-    remote: urob
+    remote: zmkfirmware
     revision: main
     import: app/west.yml
-  - name: zmk-helpers
-    remote: urob
-    revision: main
   - name: zmk-driver-azoteq-iqs5xx
     remote: danielnordqvist
     revision: main
-  self:
-    path: config
