@@ -31,7 +31,7 @@
 * SDA: D4
 * SCL: D5
 */
-&&xiao_i2c {
+&xiao_i2c {
     status = "okay";
     tps43: iqs5xx@74 {
         status = "okay";
