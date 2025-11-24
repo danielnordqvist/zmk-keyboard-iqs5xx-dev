@@ -28,10 +28,10 @@
 };
 
 /*
-* SDA: P0.26
-* SCL: P0.27
+* SDA: D4
+* SCL: D5
 */
-&arduino_i2c {
+&&xiao_i2c {
     status = "okay";
     tps43: iqs5xx@74 {
         status = "okay";
@@ -51,8 +51,7 @@
         stationary-threshold = <5>;
 
         switch-xy;
-
-        reset-gpios = <&arduino_header 14 GPIO_ACTIVE_LOW>; /* P1.10 */
-        rdy-gpios = <&arduino_header 15 GPIO_ACTIVE_HIGH>; /* P1.11 */
+        reset-gpios = <&xiao_d 2 GPIO_ACTIVE_LOW>; /* D2 */
+        rdy-gpios = <&xiao_d 3 GPIO_ACTIVE_HIGH>; /* D3 */
     };
 };
