@@ -1,2 +1,41 @@
 config ZMK_KEYBOARD_NAME
-    default "IQS5xx Dev Kit"
+    default "IQS5xxDev"
+
+CONFIG_LOG
+    default y
+CONFIG_ZMK_USB_LOGGING
+    default n
+CONFIG_ZMK_RTT_LOGGING
+    default y
+CONFIG_ZMK_LOG_LEVEL_DBG
+    default y
+CONFIG_ZMK_BLE_PASSKEY_ENTRY
+    default n
+
+CONFIG_ZMK_BLE
+    default y
+CONFIG_ZMK_USB
+    default y
+CONFIG_ZMK_SETTINGS_RESET_ON_START
+    default y
+CONFIG_MAIN_STACK_SIZE
+    default 8192
+CONFIG_ZMK_BLE_KEYBOARD_REPORT_QUEUE_SIZE
+    default 50
+CONFIG_ZMK_BLE_THREAD_STACK_SIZE
+    default 4096
+
+CONFIG_I2C
+    default y
+CONFIG_GPIO
+    default y
+CONFIG_PINCTRL
+    default y
+CONFIG_ZMK_MOUSE
+    default y
+CONFIG_ZMK_POINTING
+    default y
+CONFIG_INPUT
+    default y
+CONFIG_INPUT_AZOTEQ_IQS5XX
+    default y
