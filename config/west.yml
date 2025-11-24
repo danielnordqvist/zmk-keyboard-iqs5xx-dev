@@ -4,7 +4,7 @@ manifest:
     url-base: https://github.com/zmkfirmware
   - name: urob
     url-base: https://github.com/urob
-  - name: zmk-driver-azoteq-iqs5xx
+  - name: danielnordqvist
     url-base: https://github.com/danielnordqvist
   projects:
   - name: zmk
@@ -17,3 +17,5 @@ manifest:
   - name: zmk-driver-azoteq-iqs5xx
     remote: danielnordqvist
     revision: main
+  self:
+    path: config
