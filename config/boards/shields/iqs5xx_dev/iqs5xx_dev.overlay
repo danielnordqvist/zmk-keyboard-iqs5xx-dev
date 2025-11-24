@@ -34,11 +34,11 @@
 */
 &xiao_i2c {
     status = "okay";
-    tps43: iqs5xx@3c {
+    tps43: iqs5xx@74 {
         status = "okay";
         compatible = "azoteq,iqs5xx";
         
-        reg = <0x3c>;
+        reg = <0x74>;
 
         one-finger-tap;
         press-and-hold;
@@ -53,7 +53,7 @@
         stationary-threshold = <5>;
 
         switch-xy;
-        reset-gpios = <&xiao_d 10 GPIO_ACTIVE_LOW>; /* D2 */
-        rdy-gpios = <&xiao_d 9 GPIO_ACTIVE_HIGH>; /* D3 */
+        reset-gpios = <&xiao_d 10 GPIO_ACTIVE_LOW>; /* D10 */
+        rdy-gpios = <&xiao_d 9 GPIO_ACTIVE_HIGH>; /* D9 */
     };
 };
