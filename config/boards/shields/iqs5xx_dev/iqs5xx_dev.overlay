@@ -30,13 +30,15 @@
 /*
 * SDA: D4
 * SCL: D5
+* reg = <0x74>;
 */
 &xiao_i2c {
     status = "okay";
-    tps43: iqs5xx@74 {
+    tps43: iqs5xx@3c {
         status = "okay";
         compatible = "azoteq,iqs5xx";
-        reg = <0x74>;
+        
+        reg = <0x3c>;
 
         one-finger-tap;
         press-and-hold;
